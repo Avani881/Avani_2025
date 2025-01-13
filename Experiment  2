@@ -1,0 +1,37 @@
+Aim-Write a program that takes two strings representing numbers, converts them to wrapper classes, and performs basic arithmetic operations (addition, subtraction, multiplication, division).
+CODE-
+import java.util.Scanner;
+
+public class SimpleArithmetic {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input two numbers as strings
+        System.out.print("Enter the first number: ");
+        String num1 = scanner.nextLine();
+
+        System.out.print("Enter the second number: ");
+        String num2 = scanner.nextLine();
+
+        // Convert strings to Float
+        Float number1 = Float.valueOf(num1);
+        Float number2 = Float.valueOf(num2);
+
+        // Perform basic arithmetic operations
+        System.out.println("Addition: " + (number1 + number2));
+        System.out.println("Subtraction: " + (number1 - number2));
+        System.out.println("Multiplication: " + (number1 * number2));
+        System.out.println("Division: " + (number2 != 0 ? (number1 / number2) : "Cannot divide by zero"));
+
+        scanner.close();
+    }
+}
+
+OUTPUT-
+Enter the first number: 10
+Enter the second number: 2
+Addition: 12.0
+Subtraction: 8.0
+Multiplication: 20.0
+Division: 5.0
+
