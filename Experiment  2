@@ -6,18 +6,15 @@ public class SimpleArithmetic {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input two numbers as strings
         System.out.print("Enter the first number: ");
         String num1 = scanner.nextLine();
 
         System.out.print("Enter the second number: ");
         String num2 = scanner.nextLine();
 
-        // Convert strings to Float
         Float number1 = Float.valueOf(num1);
         Float number2 = Float.valueOf(num2);
 
-        // Perform basic arithmetic operations
         System.out.println("Addition: " + (number1 + number2));
         System.out.println("Subtraction: " + (number1 - number2));
         System.out.println("Multiplication: " + (number1 * number2));
